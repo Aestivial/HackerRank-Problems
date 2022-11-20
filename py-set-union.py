@@ -1,4 +1,4 @@
-.union()
+'''.union()
 
 The .union() operator returns the union of a set and the set of elements in an iterable.
 Sometimes, the | operator is used in place of .union() operator, but it operates only on the set of elements in set.
@@ -57,3 +57,12 @@ Explanation
 Roll numbers of students who have at least one subscription:
  and . Roll numbers:  and  are in both sets so they are only counted once.
 Hence, the total is  students.
+'''
+
+
+e = int(input())
+er = set(map(int,input().split()))
+f = int(input())
+fr = set(map(int,input().split()))
+
+print(len(er.union(fr)))
