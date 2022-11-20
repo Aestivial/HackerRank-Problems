@@ -1,4 +1,4 @@
-If we want to add a single element to an existing set, we can use the .add() operation.
+'''If we want to add a single element to an existing set, we can use the .add() operation.
 It adds the element to the set and returns 'None'.
 
 Example
@@ -47,3 +47,17 @@ Sample Output
 Explanation
 
 UK and France repeat twice. Hence, the total number of distinct country stamps is  (five).
+'''
+
+
+n = int(input())
+s=set()
+u=0
+for i in range(n):
+    p=input()
+    if p in s:
+        pass
+    else:
+        u+=1
+    s.add(p)
+print(u)
