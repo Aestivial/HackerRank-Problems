@@ -1,4 +1,4 @@
-We can use the following operations to create mutations to a set:
+'''We can use the following operations to create mutations to a set:
 
 .update() or |=
 Update the set by adding elements from an iterable/another set.
@@ -84,3 +84,22 @@ After the fourth operation, ( difference_update operation), we get:
 set 
 
 The sum of elements in set  after these operations is .
+'''
+
+
+n = int(input())
+A = set(map(int,input().split()))
+N = int(input())
+for i in range(N):
+    r=input().split()
+    if r[0] == 'update':
+        A.update(set(map(int,input().split())))
+    elif r[0] == 'intersection_update':
+        A.intersection_update(set(map(int,input().split())))
+    elif r[0] == 'difference_update':
+        A.difference_update(set(map(int,input().split())))
+    elif r[0] == 'symmetric_difference_update':
+        A.symmetric_difference_update(set(map(int,input().split())))
+    else:
+        pass
+print(sum(A))
