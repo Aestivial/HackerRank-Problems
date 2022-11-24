@@ -1,4 +1,4 @@
-.intersection()
+'''.intersection()
 The .intersection() operator returns the intersection of a set and the set of elements in an iterable.
 Sometimes, the & operator is used in place of the .intersection() operator, but it only operates on the set of elements in set.
 The set is immutable to the .intersection() operation (or & operation).
@@ -54,3 +54,11 @@ Explanation
 The roll numbers of students who have both subscriptions:
  and .
 Hence, the total is  students.
+'''
+
+e = int(input())
+er= set(map(int,input().split()))
+f = int(input())
+fr= set(map(int,input().split()))
+
+print(len(er & fr))
